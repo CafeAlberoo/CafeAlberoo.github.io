@@ -1,0 +1,45 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "plugins": ["json", "markdown", "jsdoc"],
+  "extends": ["eslint:recommended", "google", "plugin:jsdoc/recommended"],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2015,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "globalReturn": false,
+      "impliedStrict": true,
+      "jsx": false,
+      "allowImportExportEverywhere": false,
+      "codeFrame": true
+    }
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "rules": {
+    "strict": 1,
+    "json/*": [2, { "allowComments": false }],
+    "valid-jsdoc": [
+      2,
+      {
+        "requireReturn": false,
+        "requireParamDescription": true,
+        "requireReturnDescription": true,
+        "prefer": {
+          "return": "returns"
+        }
+      }
+    ],
+    "jsdoc/newline-after-description": "off",
+    "jsdoc/require-returns-check": "off"
+  },
+  "ignorePatterns": ["node_modules/", "dist/", "temp.js"],
+  "noInlineConfig": false,
+  "reportUnusedDisableDirectives": true
+}

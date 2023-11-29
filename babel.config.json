@@ -1,0 +1,20 @@
+{
+  "compact": true,
+  "minified": true,
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "debug": false,
+        "bugfixes": true,
+        "spec": true,
+        "loose": true,
+        "forceAllTransforms": true,
+        "useBuiltIns": "usage",
+        "modules": false,
+        "corejs": "3.33.3"
+      }
+    ]
+  ],
+  "plugins": ["babel-plugin-styled-components"]
+}

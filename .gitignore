@@ -1,0 +1,7 @@
+/.vscode
+/node_modules
+npm-debug.log
+/dist/*.map
+/src
+/style
+package-lock.json

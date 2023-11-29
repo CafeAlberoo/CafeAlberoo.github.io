@@ -1,0 +1,67 @@
+{
+  "name": "cafealberoo.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "module": "dist/cafealberoo.min.js",
+  "scripts": {
+    "build": "npx rollup --config ./rollup.config.js --bundleConfigAsCjs;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CafeAlberoo/cafealberoo.github.io.git"
+  },
+  "keywords": [
+    "cafe",
+    "alberoo",
+    "coffee",
+    "restaurant"
+  ],
+  "author": "ARH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CafeAlberoo/cafealberoo.github.io/issues"
+  },
+  "homepage": "https://github.com/CafeAlberoo/cafealberoo.github.io",
+  "dependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/eslint-parser": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-eslint": "^9.0.5",
+    "@rollup/plugin-esm-shim": "^0.1.5",
+    "@rollup/plugin-image": "^3.0.3",
+    "@rollup/plugin-json": "^6.0.1",
+    "@rollup/plugin-legacy": "^3.0.2",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-strip": "^3.0.4",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-url": "^8.0.2",
+    "@rollup/pluginutils": "^5.1.0",
+    "babel-plugin-styled-components": "^2.1.4",
+    "core-js": "3.33.3",
+    "cssnano": "^6.0.1",
+    "eslint": "^8.54.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-jsdoc": "^46.9.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-markdown": "^3.0.1",
+    "fullpage.js": "^4.0.20",
+    "html-tablify": "^2.0.4",
+    "papaparse": "^5.4.1",
+    "postcss": "^8.4.31",
+    "postcss-css-variables": "^0.19.0",
+    "postcss-preset-env": "^9.3.0",
+    "rollup": "^4.6.0",
+    "rollup-plugin-polyfill-node": "^0.13.0",
+    "rollup-plugin-postcss": "^4.0.2"
+  },
+  "browserslist": [
+    ">= 0.1%",
+    "last 2 versions",
+    "Firefox ESR",
+    "IE 10",
+    "dead"
+  ]
+}
